@@ -1,1 +1,1 @@
-# Webshop
+Upload meines Webshops aus meinem 1. Semester (WiSe 20/21), welchen ich Rahmen der Veranstaltung "Einführung in die Wirtschaftsinformatik" erstellt hatte. Ursprünglich war die Erstellung als Gruppenarbeit angedacht, allerdings hatten alle Personen (mit Ausnahme von mir und einer weiteren Person) ihr Studium vorzeitlich abgebrochen bzw. ließen sich nicht erreichen. Von dieser anderen Person stammt das grundlegende Design des Webshops, welches ich dann schließlich implementiert habe.
