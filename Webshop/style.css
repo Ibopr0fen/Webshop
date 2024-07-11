@@ -1,0 +1,342 @@
+
+
+    html{
+        box-sizing: border-box;
+        font-size: calc(1.5vh + 1vw + 1%)   /*Verändert man die Größe des Fensters, verändert sich die Textgröße dynamisch*/
+    }
+
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:  #fece85;
+    }
+    
+    #top{
+        text-align: center;
+        
+        
+    }
+    #logo-1 {
+        color: white;
+        background-color: #fece85;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 0;      
+    }
+    #line{
+        font-size: .2vw;
+        max-height: .2vw;
+        background-color: white;
+        color: white;                   
+    }
+    #header-1{
+        background-image: url(Bilder/header.jpg);
+        background-position: center;     
+        height: 15vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+    
+    }
+    
+    #header-2{
+        background-color: white;
+        height: 3vw;
+    }
+    #header-3{
+        font-size: .4vw;
+        background-color:white;
+        color: white;
+        margin-top: 0.4vw;
+        padding-bottom: 0.1vw;
+    }
+    
+    #logo-2{
+        color: white;
+        padding-bottom: 0.2vw;
+        font-size: 2vw;
+        
+    }
+    #navigation a{
+        color: #fece85;
+        margin: 3vw;
+        font-size: 1.5vw;  
+    }
+    #navigation{
+        padding: 0.7vw;
+        font-size: 1.5vw; 
+        
+    }
+    #shopping-cart a{
+        color: #fece85;
+        padding: 1vw;
+        font-size: 1.5vw;  
+    }
+    #shopping-cart :hover {
+        color: #609e9b;
+        font-weight: bold;
+    
+    }
+    .indexPics{
+        margin-top: 0;
+        padding-top: 4px;
+        padding-bottom: 30px;
+    }
+
+    .indexPics a{
+        font-size: 30px;
+        margin: 0;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        font-size: 40px;
+        color: white;
+    }
+    #navigation a:hover {
+        color:#609e9b;
+        font-weight: bold;
+    
+    }
+
+
+    
+    .images {
+        display: inline-block;
+        text-align:center;
+        position: static;
+        width: auto;
+        float: center;
+    }
+    figure {
+        overflow: hidden;   /*verhindert, dass Bild andere Elemente verdeckt */
+        
+    }
+    
+
+    .images img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+
+    .images .zoom figure img{
+        transform: scale(1);  /*Wie stark gezoomt wird, standardmäßig gar nicht */
+        transition: transform 0.5s ease-in-out; /*Wie lange der Zoom braucht */
+    }
+    .images .zoom figure:hover img{
+        transform: scale(1.2);
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    
+
+    .test{
+        display: block;
+    }
+
+
+   .overlay{
+       position: absolute;
+       transition: all 0.4s ease;
+       opacity: 0;
+       background-color: white;
+       
+       
+   }
+   .text{
+       color: white;
+       position: absolute;
+       top: 50%;        /*Zeile 85 und 86 lassen Text im Bild mittig und unten erscheinen*/
+       left: 50%;
+   }
+   .information{
+       height: 0;
+       width: 100%;
+       bottom: 0;
+       left: 0;
+   }
+   .zoom:hover .information{
+       height: 25%;
+   }
+   .zoom:hover .overlay{
+    opacity: 0.75;
+}
+
+   #toCart{
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+   }
+   .add-to-cart :hover {
+    color:#609e9b;;
+}
+
+   .containingContainer h4:first-of-type{
+    text-align: center;
+    margin-left: 30vw ;
+    float: left;
+   }
+   .containingContainer h4:last-of-type{
+    text-align: center;
+    margin-right: 30vw;
+    float: right;
+    margin-bottom: 0;
+   }
+   
+   .smallerContainer h5:first-of-type{
+    margin-left: 30vw; 
+    float: left; 
+   }
+   .smallerContainer h5:last-of-type{
+    margin-right: 30vw;
+    float: right;
+   }
+
+   
+   #confirmPurchase button{
+       font-size: 28px;
+       color: #fece85;
+   }
+
+   #confirmPurchase :hover {
+    color:#609e9b;
+    
+    font-style: italic;
+    cursor: pointer;
+}
+   
+   input{
+       width: 1.5vw;
+   }
+   .cardContainer h6:first-of-type{
+    float: left;
+    margin-left: 20px;
+
+   }
+   .cardContainer h6:last-of-type{
+    float: right;
+    margin-right: 30px;
+   }
+   h6{
+       font-size: 20px;
+   }
+   h5{
+    font-size: 35px;
+    display: inline-block;
+    position: static;
+    margin: 0;
+    margin-left: 0;
+   }
+   h4{
+    font-size: 50px;
+    margin: 0;
+    padding-top: 30px;
+   }
+   .cartButton{
+    float: right;
+    margin-right: 30px;
+    margin-top: -35px;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(247, 241, 241);
+    border-style: solid;
+   }
+   .cartButton2{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    background-color: rgb(247, 241, 241);
+    border-style: none;
+    overflow: hidden;
+   }
+   
+   .quantity{
+    float:right;
+    margin-right: 185px;
+    margin-top: -35px;
+    height: 24px;
+    border-style: solid;
+    background-color: rgb(247, 241, 241);
+   }
+
+   h3{
+       font-size: 12px;
+       padding: 0;
+       margin:0;
+   }
+   
+
+   #footer a{
+       font-size: 12px;
+       color: black;
+       margin: 0;
+       
+   }
+   #footer a:hover{
+    text-decoration: underline;
+   }
+   #footer{
+       background-color: white;
+       padding-top: 30px;
+   }
+   #main{
+       margin-bottom: 30px;
+   }
+
+   #footer2{
+    background-color: white;
+    padding-top: 30px;
+    margin:100;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+#footer2 a{
+    font-size: 12px;
+    color: black;
+    margin: 20;
+}
+#footer2 a:hover{
+    text-decoration: underline;
+   }
+.abousUsText{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: left;
+}
+.contactText{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: left;
+    color: white; 
+}
+.contactText a p:hover{
+    color: teal;
+}
+
+
+
+
+
+
+   
+
+
+   
